@@ -13,4 +13,4 @@ jobs:
    - name: Dependency Review
      uses: actions/dependency-review-action@v3
      with:
-       fail-on-severity: High
+       fail-on-severity: low
