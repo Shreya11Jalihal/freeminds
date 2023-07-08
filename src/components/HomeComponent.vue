@@ -1,0 +1,321 @@
+<template>
+<div>
+<section class="section-main">
+  <div class="top-text">
+    <h1>Welcome to the world of <span><b>Free-Minds!</b></span></h1>
+    <a class="btn btn-full" href="#">Blog</a>
+    <a class="btn btn-ghost" href="#">Discover</a>
+  </div>
+</section>
+<section class="section-features" id="section-a">
+  <h2>What do we do!!</h2>
+  <p class="long-copy">
+    We are a team of people who are passionate about four legged creatures on this earth. We strive for their rescue to
+    make earth a better place to live in.
+    Saving one animal will not change the world, but surely for that one animal, the world will change forever!!
+  </p>
+</section>
+</div>
+</template>
+<style>
+html
+{
+    background-color: white;
+    color:black;
+    font-family: 'Lato','Arial',sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+::ng-deep .body-css { 
+    background-image: url("../assets/dog.jpg");
+    color: #555;
+    font-family: 'Lato','Arial',sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+  
+  }
+
+  #success
+{
+  color: green;
+  position: absolute;
+  right: 0px;
+  font-weight: 500;
+  
+}
+
+p{
+
+    font-weight: 500;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box; 
+    
+}
+
+#signup{
+    text-decoration: none;
+    color:#e67e22;
+    font-weight: 400;
+}
+
+#signup:hover{
+    text-decoration: none;
+    color:#d35400;
+    font-weight: 400;
+
+}
+.clearfix{zoom:1}
+.clearfix:after
+{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+    
+}
+span{
+
+    color:#e67e22
+}
+
+.row
+{
+    max-width: 1120px;
+    margin: 0 auto;
+    
+}
+
+.top-text
+{
+   position: absolute;
+   width: 1140px;
+   font-size: 17px;
+   font-weight: 50;
+   top:50%;
+   left:60%;
+   transform: translate(-50%,-50%);   
+}
+
+/*----Headings-----------------------*/
+/*----------Headings--------------------*/
+h1,h2,h3
+{
+
+    text-transform: uppercase;    
+    font-weight: 300; 
+}
+
+h1
+{
+   margin:0;
+   margin-bottom: 20px;
+   color:#fff;
+   font-size: 225%;
+   word-spacing: 3px;
+   letter-spacing: 1px;
+     
+}
+h2
+{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    margin-right: 100px;
+    
+}
+h3
+{
+    font-size: 110%;
+    margin-bottom: 15px;
+    color:#d35400;
+    
+    
+}
+h2:after
+{
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content:" ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/*---------------------------------*/
+        /*---Buttons----*/
+/*---------------------------------*/
+
+.btn:link,
+.btn:visited,
+input[type=submit]
+{
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: background-color 0.2s,border 0.2s,color 0.2s;
+    
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]
+{
+  background-color:#e67e22;   
+  border :1px solid #e67e22;  
+  color: #fff;
+ 
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active
+{
+   background-color: #cf6d17;
+   
+    
+}
+
+.btn-full:link,
+.btn-full:visited
+{
+    background-color: #d35400; 
+    border: 1px solid #d35400;
+    color:#fff;
+    
+}
+.btn-ghost:link,
+.btn-ghost:visited
+{
+     border: 1px solid #d35400;
+     color: #fff;
+     margin-left: 10px;
+}
+
+.btn-full:active,
+.btn-full:hover
+{
+    background-color:  #b14600;  
+    color:#fff;
+    
+}
+.btn-ghost:active,
+.btn-ghost:hover
+{
+     background-color:  #b14600;  
+     border: 1px solid #b14600;
+     color: #fff;
+}
+
+.long-copy
+{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+}
+.icon
+{
+    height: auto; 
+    width: auto; 
+    max-width: 70px; 
+    max-height: 70px;
+    
+}
+.icon-small
+{
+    display:inline-block;
+    width:70px;
+    text-align: center;
+    color: #d35400;
+    
+    font-size: 120%;
+    margin-right: 5px;
+    /*secrets to align text and icons*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top:-5px;
+}
+
+
+/*-------------------Sections------------------------ */
+section
+{
+    padding: 80px;
+}
+
+.section-features
+{
+    background-color: #fff;
+
+}
+
+
+.section-features .row{
+    max-width: 1500px;
+}
+.section-main
+{
+    background-image: url("../assets/herbst.png");
+    background-position: center;
+	background-size: cover;
+	height : 100vh;
+	background-attachment: fixed;
+    height: 100vh;
+}
+.section-form
+{
+    background-color: rgb(241, 238, 238);
+}
+
+
+/*--------FORM---------------------*/
+
+.contact-form
+{
+    width: 60%;
+    margin: 0 auto;
+    
+}
+input[type=text],
+input[type=email],
+select,
+textarea
+{
+    width:100%;
+    padding: 7px;
+    border-radius: 3px;
+    border:1px solid #ccc;
+    margin-right: 10px;
+}
+
+input[type=checkbox]
+{
+    margin: 10px 5px 10px 0px;  
+}
+
+
+
+/*--------------------------------------------------------------*/
+/* Gallery*/
+/*--------------------------------------------------------------*/
+.section-gallery
+{
+    padding: 0;
+    background-color: #ccc;
+}
+
+</style>
